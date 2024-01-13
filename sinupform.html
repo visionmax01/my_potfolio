@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="make.css">
+</head>
+<body>
+  <style>
+    .body{
+  padding-bottom: 25px;
+  margin-left: 30px;
+  margin-right: 30px;
+  background-color: bisque;
+}
+   
+form {
+  width: 75%;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 5%;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px #ccc;
+  background-color: bisque;
+}
+.form-group {
+  margin-bottom: 10px;
+}
+input {
+  background-color: rgb(109, 255, 255);
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 50%;
+}
+select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 50%;
+
+}
+
+.form-control-file {
+  background-color: rgb(100, 100, 100);
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 3px #ccc;
+}
+button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 50%;
+}
+
+button[type="submit"]:hover {
+  background-color: #0069d9;
+}
+.index{
+  text-align: center;
+}
+  </style>
+  
+  <form id="index" class="index">
+      <h1>Create an account with US</h1>
+    <div class="form-group">
+      <input type="text" class="form-control" id="name" placeholder="Enter name" coln="2">
+    </div>
+    <div class="form-group">
+      <input type="email" class="form-control" id="email" placeholder="Enter email">
+    </div>
+    <div class="form-group">
+      <input type="text" class="form-control" id="phone" placeholder="Enter Phone Number">
+    </div>
+    <div class="form-group">
+      <input type="password" class="form-control" id="password" placeholder="Password">
+    </div>
+    <div class="form-group">
+      <input type="password" class="form-control" id="repassword" placeholder="Retype Password">
+    </div>
+    <div class="form-group">
+      <input type="date" class="form-control" id="dob" placeholder="Enter Date of Birth">
+    </div>
+    <div class="form-group">
+      <select class="form-control" id="country">
+        <option>Select Country</option>
+        <option>India</option>
+        <option>Nepal</option>
+        <option>America</option>
+        <option>Bangladesh</option>
+        <option>Chaina</option>
+        <option>Dubai</option>
+        <option>Bhutan</option>
+        <option>Qatar</option>
+        <option>Malasiya</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <input type="text" class="form-control" id="phone" placeholder="Enter Your State Name">
+    </div>
+    <div class="form-group">
+      <input type="text" class="form-control" id="phone" placeholder="Enter Your City Name">
+    </div>
+    <div class="form-group">
+      <label for="file">Upload File</label>
+      <input type="file" class="form-control-file" id="file">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button><br>
+    <br><div class="text-center mb-2" style="text-align: center;">
+      Already have an account?
+      <a href="login.html" class="register-link">
+        login here
+      </a>
+    </div>
+  </form>
+  
+  </div>
+  
+</body>
+</html>
