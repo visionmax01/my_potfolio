@@ -9,7 +9,7 @@ body {
   }
 
   .topnav {
-    height: 45px;
+    height: 55px;
     width: 100%;
     background-color: #333;
     display: flex;
@@ -37,7 +37,7 @@ body {
   }
   .menu a{
       font: size 16px;
-      padding: 5px;
+      padding: 4px 8px;
       border-radius: 4px;
   }
   .menu a.active {
