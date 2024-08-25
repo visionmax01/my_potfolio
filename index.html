@@ -2,70 +2,93 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="img/my_profile_p.png" class="rounded">
-  <title>Bhishan Sah - Portfolio</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/my_profile_p.png" class="rounded">
+    <title>Bhishan Sah - Portfolio</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
 
-  <!-- External Stylesheets -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- External Stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-  <link rel="stylesheet" href="./assets/css/Navbar.css">
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/Navbar.css">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
 
 <body>
-  <!-- Navbar -->
-  <nav class="topnav" id="myTopnav">
-    <div class="navContainer">
-      <a class="logoMain" href="#home">VISION PORTFOLIO</a>
-      <a href="javascript:void(0);" class="icon" id="menuIcon" onclick="toggleMenu()">
-        <i class="fa fa-bars"></i>
-      </a>
+    <!-- Navbar -->
+    <nav class="topnav" id="myTopnav">
+        <div class="navContainer">
+            <a class="logoMain" href="#home">VISION PORTFOLIO</a>
+            <a href="javascript:void(0);" class="icon" id="menuIcon" onclick="toggleMenu()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <div class="menu" id="menuItems">
+            <a href="#home" class="active">Home</a>
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <!-- first section home page  -->
+    <div class="FirstSEction text-white ">
+        <div class="shadowOnfirstBg"></div>
+        <div class="introSection">
+            <div class="introDesign1 introDesign"></div>
+            <div class="introDesign2 introDesign"></div>
+            <h2>Bhishan Prasad sah</h2>
+            <span>Computer Engineer.</span>
+             <!-- typwriter Effect  -->
+              <h1>I'M Webdeveloper, photographer Videediter UI/UX Designer</h1>
+            <p>I'm a web developer who is passionate about building beautiful and functional websites. I'm also
+                passionate about learning new technologies and learning new ways of doing things.</p>
+                <button class="btn btn-primary">Download CV</button>
+                 
+            </div>
+        <div class="ImageSection">
+            <img src="./img/my-pic.jpg" alt="">
+        </div>
     </div>
-    <div class="menu" id="menuItems">
-      <a href="#home" class="active">Home</a>
-      <a href="#news">News</a>
-      <a href="#contact">Contact</a>
-      <a href="#about">About</a>
-    </div>
-  </nav>
 
-  <!-- Page Content -->
-  <div class="content text-center text-[25px] mt-24 ">
-    <h1>My portfolio website is visible on this domain</h1>
-    <p>as soon as possible</p>
-    <h1>We are Working on It....</h1>
-    <h2 class="text-red-600">Thank You for visiting my site !!</h2>
-  </div>
+<!-- section One ended  -->
 
-  <!-- Footer -->
-  <footer class="footer">
-    <p class="text-center bg-gray-700 text-white ">&copy; 2024 Bhishan Sah. All rights reserved.</p>
-  </footer>
+    <!-- home sectionTwo   -->
+     <div class="SecondSEction">
 
-  <!-- JavaScript for Menu Toggle -->
-  <script>
-    function toggleMenu() {
-      var nav = document.getElementById("myTopnav");
-      var icon = document.getElementById("menuIcon").children[0];
-      nav.classList.toggle("responsive");
-      if (nav.classList.contains("responsive")) {
-        icon.classList.remove("fa-bars");
-        icon.classList.add("fa-times"); // Switch to close icon
-      } else {
-        icon.classList.remove("fa-times");
-        icon.classList.add("fa-bars"); // Switch back to menu icon
-      }
-    }
-  </script>
+     </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p class="text-center bg-gray-700 text-white p-2 ">&copy; 2024 Bhishan Sah. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Menu Toggle -->
+    <script>
+        function toggleMenu() {
+            var nav = document.getElementById("myTopnav");
+            var icon = document.getElementById("menuIcon").children[0];
+            nav.classList.toggle("responsive");
+            if (nav.classList.contains("responsive")) {
+                icon.classList.remove("fa-bars");
+                icon.classList.add("fa-times");
+            } else {
+                icon.classList.remove("fa-times");
+                icon.classList.add("fa-bars");
+            }
+        }
+    </script>
 </body>
 
 </html>
