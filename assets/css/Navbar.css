@@ -68,6 +68,10 @@ body {
   .navContainer{
       width: 100%;
   }
+  .topnav {
+    height: 60px;
+  }
+  
     .topnav .menu {
       box-sizing: border-box;
       width: 80%;
@@ -86,6 +90,7 @@ body {
       visibility: hidden;
       transition: opacity 0.3s ease-in-out, visibility 0.3s;
     }
+ 
     .topnav.responsive .menu {
       display: flex;
       opacity: 1;
