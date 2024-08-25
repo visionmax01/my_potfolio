@@ -1,16 +1,30 @@
-<style>
-.Navbarul{
-  display: flex;
-  justify-content:end;
-}
-</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    
 
+  </style>
+</head>
+<body>
 
-<nav class="bg-gray-800 p-4 text-white">
-  <ul class="Navbarul gap-12">
-      <li><a href="#home" class="hover:text-gray-400 absolute left-5">VISION PORTFOLIO</a></li>
-      <li><a href="#about" class="hover:text-gray-400">About</a></li>
-      <li><a href="#portfolio" class="hover:text-gray-400">Portfolio</a></li>
-      <li><a href="#contact" class="hover:text-gray-400">Contact</a></li>
-  </ul>
+<nav class="topnav" id="myTopnav">
+    <div class="navContainer">
+        <a class="logoMain" href="#home">VISION PORTFOLIO </a>
+        <a href="javascript:void(0);" class="icon" id="menuIcon" onclick="toggleMenu()">
+             <i class="fa fa-bars"></i>
+        </a>   
+    </div>
+  <div class="menu" id="menuItems">
+    <a href="#home" class="active">Home</a>
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+  </div>
 </nav>
+
+
+
+</body>
+</html>
