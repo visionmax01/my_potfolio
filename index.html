@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <link href="img/my_profile_pic.jpg" class="rounded" rel="icon">
-    <title>Bhishan sah</title>
+    <title>Bhishan Sah</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -18,24 +18,34 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="assets/css/nav.css">
     <link rel="stylesheet" href="assets/css/style.css">
+</head>
 <body>
-     <!-- Include Navbar -->
-     <div id="navbar"></div>
+    <!-- Include Navbar -->
+    <div id="navbar"></div>
 
+    <div class="content text-center text-[25px] mt-24">
+        <h1>My portfolio website is visible on this domain </h1>
+        <p>as soon as possible </p>
+        <h1>We are Working on It....</h1>
+        <h2 class="text-red-600">Thank You for visiting my site !!</h2>
+    </div>
 
+    <!-- Include Footer -->
+    <div id="footer"></div>
 
+    <script>
+        function loadComponent(id, file) {
+            fetch(file)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById(id).innerHTML = data;
+                })
+                .catch(error => console.error('Error loading component:', error));
+        }
 
-     <div class="content text-center text-[25px] mt-24">
-         <h1>My portfolio website is visable on this domain </h1>
-         <p>as soon as possible </p>
-         <h1>We are Working on It....</h1>
-         <h2 class="text-red-600">TankYou for Visiting My site !</h2>
-
-     </div>
-
-     </script>
+        // Load Navbar and Footer
+        loadComponent('navbar', 'components/navbar.html');
+        loadComponent('footer', 'components/footer.html');
+    </script>
 </body>
 </html>
-
-
-
