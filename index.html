@@ -19,7 +19,6 @@
     
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="assets/css/nav.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -35,6 +34,34 @@
     <!-- Include Footer -->
     <div id="footer"></div>
 
-<script src="assets/js/navDrower.js"></script>
+    <script>
+        function loadComponent(id, file) {
+            fetch(file)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById(id).innerHTML = data;
+                })
+                .catch(error => console.error('Error loading component:', error));
+        }
+
+        // Load Navbar and Footer
+        loadComponent('navbar', 'components/navbar.html');
+        loadComponent('footer', 'components/footer.html');
+    </script>
+
+<script>
+    function toggleMenu() {
+      var nav = document.getElementById("myTopnav");
+      var icon = document.getElementById("menuIcon").children[0];
+      nav.classList.toggle("responsive");
+      if (nav.classList.contains("responsive")) {
+        icon.classList.remove("fa-bars");
+        icon.classList.add("fa-times"); // Switch to close icon
+      } else {
+        icon.classList.remove("fa-times");
+        icon.classList.add("fa-bars"); // Switch back to menu icon
+      }
+    }
+  </script>
 </body>
 </html>
