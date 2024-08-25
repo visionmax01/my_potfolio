@@ -64,6 +64,17 @@ body {
     cursor: pointer;
   }
 
+
+
+
+  .content{
+    height: 950px;
+    padding: 8px;
+  }
+
+
+
+
   @media screen and (max-width: 768px) {
   .navContainer{
       width: 100%;
