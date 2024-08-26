@@ -192,7 +192,10 @@ body {
   height: max-content;
   /* background-color: red; */
   padding: 25px;
-
+  user-select: none;
+  -webkit-user-select: none; /* For Safari */
+  -moz-user-select: none; /* For Firefox */
+  -ms-user-select: none; /* For Internet Explorer */
 }
 .shadowOnfirstBg{
  position: absolute;
@@ -296,6 +299,7 @@ body {
 @media screen and (max-width: 768px)  {
   .FirstSEction{
     width: 100%;
+    padding: 25px 10px;
     display: flex;
     flex-direction: column;
   }
