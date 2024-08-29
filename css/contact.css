@@ -1,7 +1,8 @@
 .ContactSection{
     width: 100%;
     height: auto;
-    padding-top:90px
+    padding-top:70px;
+    padding-bottom:50px;
 }
 .ContactSection::before{
     content: "";
@@ -109,6 +110,8 @@
 .iconContactpage{
   background-color: rgb(3, 0, 87);
   padding: 25px 12px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 .iconContactpage p{
     color: white;
@@ -131,26 +134,151 @@
 }
 
 
+
+
+
+/* section two contact form section css  */
 .contactChild2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     position: relative;
     background-color: rgba(237, 237, 237, 0.236);
     width: 85%;
-    height: 400px;
     margin: auto;
     backdrop-filter: blur(50px);
     border-radius:10px;
     margin-bottom: 10px;
+    padding-bottom: 15px;
+
+}
+.ContactMeForm{
+  width: 60%;
+}
+.ContactMeForm h1{
+    font-size:28px;
+    position: relative;
+}
+
+.ContactMeForm h1::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 80px;
+    height: 5px;
+    background:linear-gradient(to right, #001d6e, #fdc1c1);
+    border-radius: 50px;
+    font-size:28px;
+    z-index: -2;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin: auto;
+    gap: 15px;
+    color: black;
+}
+.ContactDetail{
+    width: 40%;
+    height: 100%;
+
+}
+.formGroup{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.groupsection{
+    width: 100%;
+}
+.groupsection input , textarea{
+    width: 100%;
+    padding: 4px 8px;
+    border-radius: 4px;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.218);
+    backdrop-filter: blur(15px);
+    outline: none;
+    color: rgb(255, 255, 255);
+}
+.groupsection input:focus{
+    border:1px solid #fff700;
+}
+.groupsection textarea:focus{
+    border:1px solid #fff700;
+}
+.groupsection textarea{
+    padding: 10px;
+    outline: none;
+    color: white;
+}
+.ContactDetail{
+    height: 100%;
+    padding: 100px 50px;
+}
+.ContactDetail h1{
+    text-align: center;
+    font-size:28px;
+    position: relative;
+}
+.ContactDetail p{
+    text-align: justify;
 }
 
 
 
+.ContactDetail h1::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 40px;
+    height: 5px;
+    background:linear-gradient(to right, #001d6e, #fdc1c1);
+    border-radius: 50px;
+    font-size:28px;
+    z-index: -2;
+}
 
+.btnSentSMS {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.3s ease;
+    border-radius: 5px;
+}
 
+/* The red background that will animate on hover */
+.btnSentSMS::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 0, 0, 0.134);
+    transition: left 0.5s ease;
+    z-index: 1;
+}
+.btnSentSMS:hover::before {
+    left: 0;
+}
 
+/* Ensure the button text stays on top */
+.btnSentSMS span {
+    position: relative;
+    z-index: 1;
+}
 
-
-
-
+/* Optional: Change text color on hover */
+.btnSentSMS:hover {
+    color: white;
+}
 @media screen and (max-width: 768px) {
     .ContactSection{
         width: 100%;
@@ -280,12 +408,20 @@
         position: relative;
         background-color: rgba(237, 237, 237, 0.236);
         width: 95%;
-        height: 350px;
+        height: auto;
         margin: auto;
         backdrop-filter: blur(50px);
         border-radius:10px;
     }
     
+    
+
+    .ContactMeForm{
+        width: 100%;
+    }
+    .ContactDetail{
+      display: none;
+    }
     
 }
 
