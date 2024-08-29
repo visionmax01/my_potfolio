@@ -1,0 +1,291 @@
+.ContactSection{
+    width: 100%;
+    height: 100vh;
+    margin-bottom:-40px;
+    padding: 90px 0;
+}
+.ContactSection::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url("../img/bg-image2.jpg");
+    background-position: top left;
+    z-index: -1;
+}
+
+.contactChild1{
+    background-color: rgba(237, 237, 237, 0.236);
+    width: 85%;
+    height: 200px;
+    margin: auto;
+    backdrop-filter: blur(50px);
+    border-radius:10px;
+    display: flex;
+    justify-content: space-between;
+}
+.infoCnt{
+    display: flex;
+    height: 100%;
+    width: 50%;
+   }   
+
+.imagesection img{
+  height: 100%;
+  width: 200px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.shadowOnfirstBg1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   }
+   .shadowOnfirstBg1::before{
+     content: "";
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: rgb(0, 0, 0); 
+     z-index: -1;
+     opacity: 25%;
+   }
+.contactDetail{
+    width: max-content;
+    height: 100%;
+    display: flex;
+}
+.medisSection{
+    position: relative;
+    width: 30%;
+    height: 100%; 
+}
+.leftsideinfo{
+    height: 100%;
+    clip-path: polygon(40% 0, 100% 0%, 100% 100%, 0% 100% );
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgba(0, 0, 130, 0.637);
+    z-index: -1;
+
+}
+.socialMedia{
+    width: max-content;
+    padding: 0px 20px;
+    height: 60px;
+    background-color: rgba(255, 0, 0, 0.341);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    display: flex;
+    gap: 30px;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 50;
+    top: 40px;
+    right: 40px;
+    border-radius: 8px;
+}
+.medisSection h2{
+  position: absolute;
+  font-size: 18px;
+  margin-top: 15px;
+  z-index: 1;
+  right: 12%;
+}
+
+.SocialIcon{
+    padding: 7px 15px;
+    border-radius: 5px;
+    font-size: 18px;
+    background-color: white;
+    color: blue;
+}
+.iconContactpage{
+  background-color: rgb(3, 0, 87);
+  padding: 25px 12px;
+}
+.iconContactpage p{
+    color: white;
+    margin-bottom: 22px;
+}
+.contactdetailSection{
+  color: rgb(255, 255, 255);
+  padding: 25px 12px;
+}
+.contactdetailSection p{
+    margin-bottom: 23px;
+
+}
+.containtDetailPage{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+
+.contactChild2{
+    position: relative;
+    background-color: rgba(237, 237, 237, 0.236);
+    width: 85%;
+    height: 300px;
+    margin: auto;
+    backdrop-filter: blur(50px);
+    border-radius:10px;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .ContactSection{
+        width: 100%;
+        height: 100vh;
+        margin-bottom:-40px;
+        padding: 90px 0;
+    }
+    .ContactSection::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-image: url("../img/bg-image2.jpg");
+        background-position: top left;
+        z-index: -1;
+    }
+    
+    .contactChild1{
+        background-color: rgba(237, 237, 237, 0.236);
+        width: 95%;
+        height: max-content;
+        margin: auto;
+        backdrop-filter: blur(50px);
+        border-radius:10px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .imagesection img{
+        display: none;
+    }
+    .shadowOnfirstBg1{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+       }
+       .shadowOnfirstBg1::before{
+         content: "";
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         background-color: rgb(0, 0, 0); 
+         z-index: -1;
+         opacity: 25%;
+       }
+    .contactDetail{
+        width: max-content;
+        height: 100%;
+        display: flex;
+    }
+    .medisSection{
+        display: none;
+        position: relative;
+    }
+    .leftsideinfo{
+        height: 100%;
+        clip-path: polygon(40% 0, 100% 0%, 100% 100%, 0% 100% );
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        background-color: rgba(0, 0, 130, 0.637);
+        z-index: -1;
+    
+    }
+    .socialMedia{
+        width: max-content;
+        padding: 0px 20px;
+        height: 60px;
+        background-color: rgba(255, 0, 0, 0.341);
+        backdrop-filter: blur(10px);
+        position: absolute;
+        display: flex;
+        gap: 30px;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 50;
+        top: 40px;
+        right: 40px;
+        border-radius: 8px;
+    }
+    .medisSection h2{
+      position: absolute;
+      font-size: 18px;
+      margin-top: 15px;
+      z-index: 1;
+      right: 12%;
+    }
+    
+    .SocialIcon{
+        padding: 7px 15px;
+        border-radius: 5px;
+        font-size: 18px;
+        background-color: white;
+        color: blue;
+    }
+    .iconContactpage{
+      background-color: rgb(3, 0, 87);
+      padding: 25px 12px;
+    }
+    .iconContactpage p{
+        color: white;
+        margin-bottom: 24px;
+    }
+    .contactdetailSection{
+      color: rgb(255, 255, 255);
+      padding: 25px 12px;
+    }
+    .contactdetailSection p{
+        margin-bottom: 12px;
+        width: 250px;
+    
+    }
+    .containtDetailPage{
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+    
+    
+    .contactChild2{
+        position: relative;
+        background-color: rgba(237, 237, 237, 0.236);
+        width: 85%;
+        height: 300px;
+        margin: auto;
+        backdrop-filter: blur(50px);
+        border-radius:10px;
+    }
+    
+    
+}
+

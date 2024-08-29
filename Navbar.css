@@ -72,7 +72,8 @@ body {
 }
 
 .menu a:hover {
-  color: rgb(204, 204, 204);
+  background-color: #d5d4d7;
+  color: rgb(0, 42, 193);
 }
 
 .topnav .icon {
