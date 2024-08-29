@@ -1,8 +1,7 @@
 .ContactSection{
     width: 100%;
-    height: 100vh;
-    margin-bottom:-40px;
-    padding: 90px 0;
+    height: auto;
+    padding-top:90px
 }
 .ContactSection::before{
     content: "";
@@ -10,9 +9,10 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-image: url("../img/bg-image2.jpg");
     background-position: top left;
+    background-size: cover;
     z-index: -1;
 }
 
@@ -135,10 +135,11 @@
     position: relative;
     background-color: rgba(237, 237, 237, 0.236);
     width: 85%;
-    height: 300px;
+    height: 400px;
     margin: auto;
     backdrop-filter: blur(50px);
     border-radius:10px;
+    margin-bottom: 10px;
 }
 
 
@@ -153,9 +154,8 @@
 @media screen and (max-width: 768px) {
     .ContactSection{
         width: 100%;
-        height: 100vh;
-        margin-bottom:-40px;
-        padding: 90px 0;
+        height: 100%;
+
     }
     .ContactSection::before{
         content: "";
@@ -163,9 +163,10 @@
         top: 0;
         left: 0;
         width: 100%;
-        height: 100vh;
+        height: 100%;
         background-image: url("../img/bg-image2.jpg");
         background-position: top left;
+        background-size: cover;
         z-index: -1;
     }
     
@@ -256,7 +257,6 @@
     }
     .iconContactpage p{
         color: white;
-        margin-bottom: 24px;
     }
     .contactdetailSection{
       color: rgb(255, 255, 255);
@@ -279,8 +279,8 @@
     .contactChild2{
         position: relative;
         background-color: rgba(237, 237, 237, 0.236);
-        width: 85%;
-        height: 300px;
+        width: 95%;
+        height: 350px;
         margin: auto;
         backdrop-filter: blur(50px);
         border-radius:10px;
