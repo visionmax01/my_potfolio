@@ -35,13 +35,26 @@ body {
 }
 .navContainer a{
   margin-left: 15px;
-}
-.logoMain {
+  font-size: 25px;
+  color: #fff;
   font-weight: 900;
   letter-spacing: 2px;
+
+}
+.logoMain::before{
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 3px;
+  background-color: #aaff00;
+  border-radius:50px;
+  bottom: 11px;
+}
+.logoMain::first-letter  {
+  color: #aaff00;
 }
 
-.topnav a {
+.menu a {
   color: #f2f2f2;
   text-decoration: none;
   font-size: 17px;
@@ -299,6 +312,23 @@ body {
 
 
 @media screen and (max-width: 768px)  {
+  .navContainer a{
+    margin-left: 15px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 900;
+    letter-spacing: 2px;
+  
+  }
+  .logoMain::before{
+    content: "";
+    position: absolute;
+    width: 90px;
+    height: 3px;
+    background-color: #aaff00;
+    border-radius:50px;
+    bottom: 15px;
+  }
   .FirstSEction{
     width: 100%;
     padding: 25px 10px;

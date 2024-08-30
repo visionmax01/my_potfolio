@@ -19,6 +19,7 @@
 }
 
 .contactChild1 {
+    position: relative;
     background-color: rgba(237, 237, 237, 0.236);
     width: 85%;
     margin: auto;
@@ -168,9 +169,9 @@
 }
 
 .SocialIcon{
-    padding: 7px 15px;
+    padding: 2px 12px;
     border-radius: 2px;
-    font-size: 18px;
+    font-size: 25px;
     background-color: white;
     color: blue;
     transition: color 0.3s ease;
@@ -275,7 +276,7 @@
     bottom: -5px;
     width: 60px;
     height: 5px;
-    background: linear-gradient(to right, #001d6e, #fdc1c1);
+    background: linear-gradient(to left, #00ff1a, #0026ff);
     border-radius: 50px;
     z-index: -2;
 }
@@ -344,7 +345,7 @@ textarea:focus {
     bottom: -5px;
     width: 40px;
     height: 5px;
-    background: linear-gradient(to right, #001d6e, #fdc1c1);
+    background: linear-gradient(to left, #22ff00, #0800ff);
     border-radius: 50px;
     z-index: -2;
 }
