@@ -250,8 +250,8 @@
 .ContactMeForm h1::before {
     content: '';
     position: absolute;
-    bottom: 0;
-    width: 80px;
+    bottom: -5px;
+    width: 60px;
     height: 5px;
     background: linear-gradient(to right, #001d6e, #fdc1c1);
     border-radius: 50px;
@@ -308,6 +308,7 @@ textarea:focus {
 .ContactDetail h1 {
     text-align: center;
     font-size: 28px;
+    margin-bottom: 10px;
     position: relative;
 }
 
@@ -318,7 +319,7 @@ textarea:focus {
 .ContactDetail h1::before {
     content: '';
     position: absolute;
-    bottom: 0;
+    bottom: -5px;
     width: 40px;
     height: 5px;
     background: linear-gradient(to right, #001d6e, #fdc1c1);
@@ -388,7 +389,7 @@ textarea:focus {
     }
     .contactdetailSection p{
         font-size:0.9rem;
-        
+
     }
 
     .ContactMeForm {
