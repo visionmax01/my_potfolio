@@ -180,7 +180,6 @@ body {
   padding: 30px;
   width: 100%;
   height: auto;
-  overflow: hidden;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -205,12 +204,7 @@ body {
   position: relative;
   width: 50%;
   height: max-content;
-  /* background-color: red; */
   padding: 25px;
-  user-select: none;
-  -webkit-user-select: none; /* For Safari */
-  -moz-user-select: none; /* For Firefox */
-  -ms-user-select: none; /* For Internet Explorer */
 }
 .shadowOnfirstBg{
  position: absolute;
@@ -250,13 +244,15 @@ body {
 }
 
 .introSection h2{
+  text-transform: uppercase;
+  margin-bottom: -10px;
   color: rgb(255, 255, 255);
-  font-size: 50px;
+  font-size: 42px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: bold;
 }
 .introSection span{
-  font-size: 22px;
+  font-size: 16px;
   font-weight: 600;
 
 }
@@ -264,13 +260,12 @@ body {
   display: flex;
   align-items: center;
   gap: 15px;
-  margin-top: 20px;
+  padding-top: 8px;
   font-weight: 600;
 
 }
 .introSection p{
   font-size: 18px;
-  margin-top: 10px;
   font-weight: 400;
   text-align: justify;
   padding: 0 0 15px 0px;
@@ -309,8 +304,15 @@ body {
   from, to { border-color: transparent; }
   50% { border-color: black; }
 }
-
-
+.btnDownloadCv{
+  background-color: #0044ff;
+  padding: 8px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.btnDownloadCv:hover{
+  background-color: #283c75;
+}
 @media screen and (max-width: 768px)  {
   .navContainer a{
     margin-left: 15px;
