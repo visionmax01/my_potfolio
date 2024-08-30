@@ -177,7 +177,7 @@ body {
 .FirstSEction {
   position: relative;
   margin-top: 50px;
-  padding: 30px;
+  padding: 50px;
   width: 100%;
   height: auto;
   display: flex;
@@ -304,15 +304,39 @@ body {
   from, to { border-color: transparent; }
   50% { border-color: black; }
 }
-.btnDownloadCv{
+.btnDownloadCv {
+  position: relative; 
+  z-index: 1;
+  border-radius: 4px;
   background-color: #0044ff;
   padding: 8px 15px;
-  border-radius: 6px;
   cursor: pointer;
+  color: white; 
+  font-size: 16px; 
+  font-weight: bold; 
+  overflow: hidden; 
 }
-.btnDownloadCv:hover{
-  background-color: #283c75;
+
+.btnDownloadCv::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-left: 3px solid blue;
+  border-radius: 4px; 
+  background: linear-gradient(to right, #000000, #007302);
+  z-index: -1; 
+  transition: opacity 0.3s ease; 
+  opacity: 0; 
 }
+
+.btnDownloadCv:hover::before {
+  opacity: 1;
+}
+
+
 @media screen and (max-width: 768px)  {
   .navContainer a{
     margin-left: 15px;
@@ -361,13 +385,11 @@ body {
   }
   .introSection h1{
     font-size: 28px;
-    margin-top: 10px;
     font-weight: 600;
   
   }
   .introSection p{
     font-size: 18px;
-    margin-top: 10px;
     font-weight: 400;
     text-align: justify;
     padding: 0 0 15px 0px;
@@ -377,4 +399,75 @@ body {
 
 
 
-/* second section home  */
+/* second section home my experties  */
+
+.SecondSEction{
+  padding: 30px 20px;
+  background-image: url(./img/galexy.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+  gap: 25px;
+  position: relative;
+  z-index: 1;
+}
+.topBarsection{
+  margin: auto;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  height: 5px;
+  background-color: rgba(255, 255, 255, 0.24);
+  backdrop-filter: blur(5px);
+  z-index: 2;
+  background: linear-gradient(to left, #ff0000, #ff7b00 ,#ffffff);
+}
+.SecondSEction::before{
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.412);
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(5px);
+  z-index: -1;
+}
+.SecondSEction h1{
+  font-size:20px;
+  font-weight: 600;
+  color: #ffffff;
+  width: max-content;
+  position: relative;
+
+}
+
+.SecondSEction h1::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width:70px;
+  height: 3px;
+  border-radius: 20px;
+  background-color: #aaff00;
+}
+.experties{
+  width: 95%;
+  margin:auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.experties .html{
+   width: 200px;
+   height: 150px;
+   background-color: hsla(0, 100%, 79%, 0.196);
+   backdrop-filter: blur(10px);
+   border-radius: 10px;
+}
