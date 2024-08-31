@@ -456,30 +456,62 @@ body {
   border-radius: 20px;
   background-color: #aaff00;
 }
-.experties{
-  width: 95%;
-  margin:auto;
-  height: auto;
-  flex-wrap: wrap;
+.experties {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 30px;
 }
-.experties .html{
-   width: 60px;
-   height: 60px;
-   background-color: hsla(0, 100%, 79%, 0.196);
-   backdrop-filter: blur(10px);
-   border-radius: 10px;
-   display: flex;
-   align-items: center;
-   justify-content: center;
+
+.html {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsla(0, 100%, 79%, 0.196);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  transition: all 0.3s ease;
 }
- .html img{
+
+.html img {
   width: 40px;
   height: 40px;
+  transition: all 0.3s ease-in-out;
 }
+
+.html:hover img {
+  scale: 1.2;
+  margin-bottom: 12px;
+
+}
+
+.tooltip {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 5px;
+  padding: 3px 8px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 3px;
+  font-size: 12px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.html:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+
 
 
 @media screen and (max-width: 768px) {
@@ -507,5 +539,16 @@ body {
     width: 35px;
     height: 35px;
   }
+  
+}
+
+
+
+
+
+/* section third home page  */
+.workexperties{
+  width: 100%;
+  height: 350px;
   
 }
