@@ -1,6 +1,6 @@
 .abouteConaint {
     margin-top: 55px;
-    padding: 15px;
+    padding-top: 15px;
     width: 100%;
     height: 450px;
 }
@@ -96,12 +96,79 @@
     text-align: justify;
 
 }
+.footerAbout{
+    width: 100%;
+    background-color: red;
+}
+
+
+
+/* section two aboute area of intrest  */
+.thirdHeadingAbout{
+    width: 100%;
+    border-radius: 10px;
+    height:max-content;
+    padding-top: 25px;
+    display: flex;
+    position: relative;
+    background:linear-gradient(to left, #ffffff70, #f6730099);
+    margin-bottom: 25px;
+    z-index: -1;
+}
+.thirdHeadingAbout::before{
+    border-radius: 10px;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.541);
+    backdrop-filter: blur(100px);
+    z-index: -1;
+}
+.thingsIlove{
+    padding-left: 50px;
+    width: 50%;
+    margin-bottom: 50px;
+}
+.containtLOVE {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 60%;
+    padding: 10px;
+}
+.containtLOVE img{
+    width: 40px;
+    height: 40px;
+}
+.thingsIDo{
+    width: 80%;
+}
+.thingILoveDO{
+    background-color: red;
+    padding-top:10px;
+}
+.mainComponent{
+    display: flex;
+}
+.thingsIdo1{
+    display: flex;
+}
+.thingsIdo1   p{
+  list-style: none;
+  color: white;
+}
+.thingsIdo1   span{
+   color: #a2ff00;
+}
 
 @media screen and (max-width: 768px) {
 
     .abouteConaint {
         margin-top: 55px;
-        padding: 10px;
+        padding-top: 10px;
         width: 100%;
         height: 450px;
     }
@@ -146,7 +213,6 @@
     .imageSectionAboute {
         display: none;
     }
-
     .SMimageSectionAboute {
         width: 100%;
         height: 250px;
@@ -210,6 +276,34 @@
         width: 100%;
         text-align: justify;
 
+    }
+
+
+    .thirdHeadingAbout{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding:25px 15px;
+    }
+    .thingsIlove{
+        padding-left: 10px;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .containtLOVE {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        width: 80%;
+        padding: 10px;
+    }
+    .containtLOVE img{
+        width: 40px;
+        height: 40px;
+    }
+    .thingsIDo{
+        width: 80%;
+        padding-left: 10px;
     }
 
 }
