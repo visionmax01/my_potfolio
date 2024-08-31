@@ -135,9 +135,30 @@
 .containtLOVE {
     display: flex;
     flex-wrap: wrap;
+    background: #00000028;
     gap: 20px;
-    width: 60%;
+    width: 90%;
+    margin-top: 13px;
+    border-radius: 8px;
     padding: 10px;
+}
+.hedingAboute{
+    width: max-content;
+    font-size:28px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 900;
+    position: relative;
+    margin-bottom: 10px;
+
+}
+.hedingAboute::before{
+    content: " ";
+    position: absolute;
+    left:0;
+    bottom: 0;
+    width: 80px;
+    height:3px;
+    background-color: #a2ff00;
 }
 .containtLOVE img{
     width: 40px;
@@ -145,23 +166,36 @@
 }
 .thingsIDo{
     width: 80%;
+    padding-bottom: 15px;
 }
-.thingILoveDO{
-    background-color: red;
-    padding-top:10px;
+.thingILoveDO1{
+    width: 50%;
 }
 .mainComponent{
+    margin-top:10px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.123);
+    backdrop-filter: blur(20px);
+    border-radius: 8px;
+    width: 95%;
+    height: max-content;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 .thingsIdo1{
     display: flex;
+    align-items: center;
+    gap: 5px;
 }
 .thingsIdo1   p{
   list-style: none;
   color: white;
+  font-size: 16px;
 }
 .thingsIdo1   span{
    color: #a2ff00;
+   font-size: 25px;
 }
 
 @media screen and (max-width: 768px) {
@@ -282,8 +316,10 @@
     .thirdHeadingAbout{
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 90%;
+        margin: auto;
         padding:25px 15px;
+        margin-bottom: 20px;
     }
     .thingsIlove{
         padding-left: 10px;
@@ -294,7 +330,7 @@
         display: flex;
         flex-wrap: wrap;
         gap: 20px;
-        width: 80%;
+        width: 95%;
         padding: 10px;
     }
     .containtLOVE img{
@@ -302,8 +338,27 @@
         height: 40px;
     }
     .thingsIDo{
-        width: 80%;
+        width: 100%;
         padding-left: 10px;
     }
+    .mainComponent{
+        display: flex;
+        flex-direction: column;
+    }
+    .thingILoveDO1{
+        width: 100%;
+    }
+    .thingsIdo1{
+        width: 100%;
+    }
+    .thingsIdo1   p{
+        list-style: none;
+        color: white;
+        font-size: 13px;
+      }
+      .thingsIdo1   span{
+         color: #a2ff00;
+         font-size: 25px;
+      }
 
 }
