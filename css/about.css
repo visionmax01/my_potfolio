@@ -1,0 +1,208 @@
+.abouteConaint {
+    margin-top: 55px;
+    padding: 15px;
+    width: 100%;
+    height: 450px;
+}
+
+.infoSectionAbout {
+    width: 80%;
+    height: auto;
+    margin: auto;
+}
+
+.firstHeadingAbout {
+    position: relative;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.straightLine {
+    width: 100%;
+    height: 4px;
+    border-radius: 15px;
+    background-color: rgb(1, 255, 9);
+}
+
+.INTROabout {
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+    position: absolute;
+    text-align: center;
+}
+
+.INTROabout h1 {
+    margin-top: 14px;
+    font-size: 28px;
+    font-weight: 900;
+    letter-spacing: 4px;
+    margin-bottom: -8px;
+}
+
+.INTROabout span {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+.SecondHeadingAbout {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    padding: 15px;
+    width: 100%;
+    height: max-content;
+}
+
+.imageSectionAboute {
+    width: 50%;
+    height: auto;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.SMimageSectionAboute {
+    display: none;
+}
+
+.imageSectionAboute img {
+    background-color: blue;
+    width: 60px;
+    border-radius: 6px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.3s ease;
+
+}
+
+.imageSectionAboute img:hover {
+    width: 250px;
+    border: 1px solid black;
+}
+
+.abouteMeSection {
+    width: 50%;
+    text-align: justify;
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .abouteConaint {
+        margin-top: 55px;
+        padding: 10px;
+        width: 100%;
+        height: 450px;
+    }
+
+    .infoSectionAbout {
+        width: 98%;
+        height: auto;
+        margin: auto;
+    }
+
+    .firstHeadingAbout {
+        position: relative;
+        padding: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .INTROabout h1 {
+        margin-top: 14px;
+        font-size: 22px;
+        font-weight: 900;
+        letter-spacing: 2px;
+        margin-bottom: -10px;
+    }
+
+    .INTROabout span {
+        font-size: 8px;
+        font-weight: 600;
+    }
+
+
+    .SecondHeadingAbout {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+        width: 100%;
+        height: max-content;
+    }
+
+    .imageSectionAboute {
+        display: none;
+    }
+
+    .SMimageSectionAboute {
+        width: 100%;
+        height: 250px;
+        border-radius: 6px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    
+    .SMimageSectionAboute img {
+        object-fit: cover;
+        border-radius: 8px;
+        transition: transform 0.8s ease-in-out, z-index 0.3s;
+    }
+    
+    .image1, .image2, .image3 {
+        position: absolute;
+        width: 180px;
+        height: 220px;
+        cursor: pointer;
+    }
+    
+    .image1 {
+        transform: translateX(-50%);
+        z-index: 1;
+    }
+    
+    .image2 {
+        transform: translateX(50%);
+        z-index: 1;
+    }
+    
+    .image3 {
+        width: 220px;
+        height: 250px;
+        z-index: 3; /* Image 3 is on top by default */
+        transition: transform 0.8s ease-in-out, z-index 0.3s;
+    }
+    
+    .image1:hover ~ .image3,
+    .image2:hover ~ .image3 {
+        transform: scale(0.9); 
+        z-index: 1;
+    }
+    
+    .image1:hover {
+        z-index: 2; /* Bring image 1 to the front */
+        transform: translateX(-50%) scale(1.1); /* Scale up image 1 on hover */
+    }
+    
+    .image2:hover {
+        z-index: 2; /* Bring image 2 to the front */
+        transform: translateX(50%) scale(1.1); /* Scale up image 2 on hover */
+    }
+    
+
+    .abouteMeSection {
+        width: 100%;
+        text-align: justify;
+
+    }
+
+}

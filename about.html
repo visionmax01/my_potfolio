@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/my_profile_p.png" class="rounded">
+    <title>Bhishan Sah - about</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!-- External Stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Google Fonts -->
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+    <link rel="stylesheet" href="Navbar.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/about.css">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+     <!-- Navbar -->
+     <nav class="topnav" id="myTopnav">
+        <div class="navContainer">
+            <a class="logoMain " href="/index.html">BHISHAN SAH</a>
+            <a href="javascript:void(0);" class="icon" id="menuIcon" onclick="toggleMenu()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <div class="menu" id="menuItems">
+            <a href="/index.html">Home</a>
+            <a href="#news">News</a>
+            <a href="/contact.html" >Contact</a>
+            <a href="/about.html" class="active">About</a>
+        </div>
+    </nav>
+
+<!-- main aboute Section here  -->
+<div class="abouteConaint">
+    <div class="infoSectionAbout">
+        <div class="firstHeadingAbout">
+            <div class="straightLine"></div>
+            <div class="INTROabout">
+                <h1>ABOUT ME</h1>
+                <span>ALLOW ME TO INTRODCE MYSELF</span>
+            </div>
+        </div>
+        <div class="SecondHeadingAbout">
+            <div class="imageSectionAboute ">
+                <img  src="./img/my_profile_pic.jpg" alt="">
+                <img  src="./img/my-pic.jpg" alt="">
+                <img  src="./img/myimage1.jpg" alt="">
+                <img  src="./img/myimage2.jpg" alt="">
+            </div>
+            <div class="SMimageSectionAboute ">
+                <img class="image1" src="./img/my_profile_pic.jpg" alt="">
+                <img class="image2" src="./img/myimage1.jpg" alt="">
+                <img class="image3" src="./img/myimage2.jpg" alt="">
+            </div>
+            <div class="abouteMeSection">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure amet, sunt quod mollitia earum consequatur vitae sequi commodi sit animi alias maiores nulla quas id beatae inventore dolorem hic, illo delectus nostrum. Unde ullam harum vel? Libero quasi magnam fugiat!</p>
+            </div>
+        </div>
+        <div class="thirdHeadingAbout"></div>
+    </div>
+</div>
+
+<!-- end of section aboute -->
+
+
+
+
+     <!-- section One ended -->
+    <!-- Footer -->
+
+    <!-- JavaScript for Menu Toggle -->
+    <script src="./assets/js/navDrower.js"></script>
+    <script>
+        function toggleMenu() {
+            var nav = document.getElementById("myTopnav");
+            var icon = document.getElementById("menuIcon").children[0];
+            nav.classList.toggle("responsive");
+            if (nav.classList.contains("responsive")) {
+                icon.classList.remove("fa-bars");
+                icon.classList.add("fa-times");
+            } else {
+                icon.classList.remove("fa-times");
+                icon.classList.add("fa-bars");
+            }
+        }
+    </script>
+</body>
+</html>
