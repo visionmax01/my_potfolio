@@ -411,7 +411,7 @@ body {
   flex-direction: column;
   justify-content:center;
   align-items:center;
-  gap: 25px;
+  gap: 20px;
   position: relative;
   z-index: 1;
 }
@@ -424,7 +424,7 @@ body {
   background-color: rgba(255, 255, 255, 0.24);
   backdrop-filter: blur(5px);
   z-index: 2;
-  background: linear-gradient(to left, #ff0000, #ff7b00 ,#ffffff);
+ background-color: #0a34a779;
 }
 .SecondSEction::before{
   content: " ";
@@ -460,14 +460,52 @@ body {
   width: 95%;
   margin:auto;
   height: auto;
+  flex-wrap: wrap;
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 30px;
 }
 .experties .html{
-   width: 200px;
-   height: 150px;
+   width: 60px;
+   height: 60px;
    background-color: hsla(0, 100%, 79%, 0.196);
    backdrop-filter: blur(10px);
    border-radius: 10px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+ .html img{
+  width: 40px;
+  height: 40px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .experties{
+    width: 95%;
+    margin:auto;
+    height: auto;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .experties .html{
+     width: 50px;
+     height: 50px;
+     background-color: hsla(0, 100%, 79%, 0.196);
+     backdrop-filter: blur(10px);
+     border-radius: 10px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+  }
+  .html img{
+    width: 35px;
+    height: 35px;
+  }
+  
 }
