@@ -23,7 +23,7 @@
     width: 100%;
     height: 4px;
     border-radius: 15px;
-    background-color: rgb(1, 255, 9);
+    background-color: rgb(0, 0, 0);
 }
 
 .INTROabout {
@@ -39,6 +39,12 @@
     font-weight: 900;
     letter-spacing: 4px;
     margin-bottom: -8px;
+}
+.INTROabout h1 span{
+    font-size: 23px;
+    font-weight: 900;
+    color: #aaff00;
+
 }
 
 .INTROabout span {
@@ -145,6 +151,7 @@
         width: 100%;
         height: 250px;
         border-radius: 6px;
+        margin-bottom: 25px;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -178,7 +185,7 @@
     .image3 {
         width: 220px;
         height: 250px;
-        z-index: 3; /* Image 3 is on top by default */
+        z-index: 3; 
         transition: transform 0.8s ease-in-out, z-index 0.3s;
     }
     
@@ -189,12 +196,12 @@
     }
     
     .image1:hover {
-        z-index: 2; /* Bring image 1 to the front */
-        transform: translateX(-50%) scale(1.1); /* Scale up image 1 on hover */
+        z-index: 2; 
+        transform: translateX(-50%) scale(1.1);
     }
     
     .image2:hover {
-        z-index: 2; /* Bring image 2 to the front */
+        z-index: 2; 
         transform: translateX(50%) scale(1.1); /* Scale up image 2 on hover */
     }
     
