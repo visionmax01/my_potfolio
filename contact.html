@@ -24,11 +24,20 @@
         rel="stylesheet">
     <link rel="stylesheet" href="Navbar.css">
     <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/loader.css">
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
+
+    <div id="loader" class="loaderContainer">
+        <div class="loaderContainer">
+          <h1>B</h1>
+          <h2>PORTFOLIO</h2>
+          <div class="spinner"></div>
+        </div>
+    </div>
     <!-- Navbar -->
     <nav class="topnav" id="myTopnav">
         <div class="navContainer">
@@ -140,20 +149,8 @@
     </footer>
     <!-- JavaScript for Menu Toggle -->
     <script src="./assets/js/navDrower.js"></script>
-    <script>
-        function toggleMenu() {
-            var nav = document.getElementById("myTopnav");
-            var icon = document.getElementById("menuIcon").children[0];
-            nav.classList.toggle("responsive");
-            if (nav.classList.contains("responsive")) {
-                icon.classList.remove("fa-bars");
-                icon.classList.add("fa-times");
-            } else {
-                icon.classList.remove("fa-times");
-                icon.classList.add("fa-bars");
-            }
-        }
-    </script>
+    <script src="./assets/js/loader.js"></script>
+    <script src="./assets/js/toggleMenu.js"></script>
 </body>
 
 </html>
