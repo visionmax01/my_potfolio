@@ -19,7 +19,7 @@
     width: 350px;
     height: 150px;
     display: flex;
-    align-items: center;
+    align-items: top;
     justify-content: center;
 }
 
@@ -87,7 +87,7 @@
 
 #loader h2 {
     position: absolute;
-    bottom: 5%;
+    bottom: 36%;
     font-size: 22px;
     font-weight: 600;
     opacity: 0.3;
