@@ -350,7 +350,10 @@ body {
 .btnDownloadCv:hover::before {
   opacity: 1;
 }
-
+.btnDownloadCv i{
+  position: relative;
+  margin-right:5px;
+}
 
 @media screen and (max-width: 768px)  {
   .navContainer a{

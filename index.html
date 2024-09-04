@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Google Fonts -->
     <link
@@ -66,7 +67,8 @@
             </h1>
             <p>I'm a web developer who is passionate about building beautiful and functional websites. I'm also
                 passionate about learning new technologies and learning new ways of doing things.</p>
-            <button class="btnDownloadCv">Download CV</button>
+                <button id="downloadCvBtn" class="btnDownloadCv"><i class="fa-solid fa-cloud-arrow-down"></i>Download CV</button>
+              </div>
 
         </div>
         <div class="ImageSection">
@@ -160,6 +162,27 @@
     <script src="./assets/js/navDrower.js"></script>
     <script src="./assets/js/loader.js"></script>
     <script src="./assets/js/toggleMenu.js"></script>
+
+    <script>
+      document.getElementById('downloadCvBtn').addEventListener('click', function () {
+          // Disable the button to prevent multiple clicks
+          const downloadButton = this;
+          downloadButton.disabled = true;
+          downloadButton.innerHTML = '<i class="fa-solid fa-cloud-arrow-down w-32 scale-1.1"></i>';
+
+          // Set a 1-second delay before downloading the file
+          setTimeout(function () {
+              const link = document.createElement('a');
+              link.href = './My_resume/Bhishan-sah_Resume_CV.pdf';
+              link.download = 'Bhishan-sah_Resume_CV.pdf'; 
+              link.click();
+
+              // Re-enable the button and reset the text after the download
+              downloadButton.disabled = false;
+              downloadButton.innerHTML = '<i class="fa-solid fa-cloud-arrow-down"></i>Download CV';
+          }, 1000); // 1 second delay
+      });
+  </script>
 </body>
 
 </html>
