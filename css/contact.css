@@ -173,9 +173,9 @@
     border-radius: 2px;
     font-size: 25px;
     background-color: white;
-    color: blue;
     transition: color 0.3s ease;
     position: relative;
+    color: blue;
     cursor: pointer;
     overflow: hidden;
 }
@@ -195,14 +195,26 @@
     transition: left 0.3s ease;
     z-index: 1;
 }
+.instagram{
+    color: red;
+}
+.whatsapp{
+    color: green;
+}
 .whatsapp::before{
     background-color: rgb(0, 211, 0);
 }
+.github{
+    color: rgb(0, 0, 0);
+}
 .github::before{
-    background-color: rgb(93, 0, 214);
+    background-color: #000000;
+}
+.linkdin{
+    color: #48bad1;
 }
 .linkdin::before{
-    background-color: rgb(72, 186, 209);
+    background-color: #48bad1;
 }
 .SocialIcon:hover{
     color: white;
