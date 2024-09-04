@@ -354,6 +354,18 @@ body {
   margin-right:5px;
 }
 
+.viewResume{
+  background-color: white;
+  color: blue;
+  padding: 6px 12px;
+  border-radius: 6px;
+  margin-left: 10px;
+
+}
+.viewResume:hover{
+  background-color: rgb(203, 203, 203);
+  cursor: pointer;
+}
 @media screen and (max-width: 768px)  {
   .navContainer a{
     margin-left: 15px;
@@ -411,6 +423,18 @@ body {
     text-align: justify;
     padding: 0 0 15px 0px;
   
+  }
+  .btnDownloadCv {
+    position: relative; 
+    z-index: 1;
+    border-radius: 4px;
+    background-color: #0044ff;
+    padding: 8px 12px;
+    cursor: pointer;
+    color: white; 
+    font-size: 14px; 
+    font-weight: bold; 
+    overflow: hidden; 
   }
 }
 
