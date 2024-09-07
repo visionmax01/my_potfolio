@@ -446,8 +446,11 @@ textarea:focus {
         padding: 8px;
     }
     .smallScreen img{
-        width: 120px;
-        border-radius: 10%;
+        width:100px;
+        border-top-left-radius: 15%;
+        border-bottom-right-radius: 15%;
+        border-top-right-radius: 3%;
+        border-bottom-left-radius: 3%;
         height: 100px;
     }
     .socialMediaSM{
