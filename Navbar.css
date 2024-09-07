@@ -35,7 +35,7 @@ body {
 }
 .navContainer a{
   margin-left: 15px;
-  font-size: 25px;
+  font-size: 18px;
   color: #fff;
   font-weight: 900;
   letter-spacing: 2px;
@@ -45,10 +45,10 @@ body {
   content: "";
   position: absolute;
   width: 80px;
-  height: 3px;
+  height: 1.5px;
   background-color: #aaff00;
   border-radius:50px;
-  bottom: 11px;
+  bottom: 16px;
 }
 .logoMain::first-letter  {
   color: #aaff00;
@@ -371,10 +371,10 @@ body {
     content: "";
     position: absolute;
     width: 90px;
-    height: 3px;
+    height: 1.5px;
     background-color: #aaff00;
     border-radius:50px;
-    bottom: 15px;
+    bottom: 17px;
   }
   .FirstSEction{
     width: 100%;
