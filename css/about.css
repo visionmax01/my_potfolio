@@ -40,7 +40,8 @@
     letter-spacing: 4px;
     margin-bottom: -8px;
 }
-.INTROabout h1 span{
+
+.INTROabout h1 span {
     font-size: 28px;
     font-weight: 900;
     color: #aaff00;
@@ -74,7 +75,7 @@
 
 .SMimageSectionAboute {
     display: none;
-    
+
 }
 
 .imageSectionAboute img {
@@ -93,7 +94,8 @@
     width: 250px;
     border: 1px solid black;
 }
-.infoHoverIMG{
+
+.infoHoverIMG {
     position: absolute;
     top: -8%;
     font-size: 12px;
@@ -107,26 +109,162 @@
     text-align: justify;
 
 }
-.footerAbout{
+
+.footerAbout {
     width: 100%;
     background-color: red;
 }
 
+/* education section  */
+.EducationSection {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    backdrop-filter: blur(25px);
+}
 
-
-/* section two aboute area of intrest  */
-.thirdHeadingAbout{
+.educationDetail {
     width: 100%;
     border-radius: 10px;
-    height:max-content;
+    display: flex;
+    background: #eaeaea;
+    padding: 10px 15px;
+}
+
+.tenthClass {
+    margin-top: 15px;
+    width: 60%;
+}
+
+.imageVies {
+    width: 40%;
+    height: max-content;
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+
+}
+
+.imageVies img {
+    width: 330px;
+    height: 170px;
+    object-fit: cover;
+    object-position: top center;
+    display: flex;
+    flex-shrink: 150px;
+    opacity: 85%;
+}
+
+.tenthClass div {
+    margin-bottom: 10px;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 20px;
+    color: rgba(0, 17, 254, 0.419);
+}
+
+.tenthClass div i {
+    color: rgb(21, 136, 0);
+}
+
+.tenthClass ul h3 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: #8800ff3b;
+    max-width: fit-content;
+    border-radius: 5px;
+    color: rgba(0, 0, 0, 0.568);
+    padding: 3px;
+
+    font-weight: 600;
+}
+
+.tenthClass ul li:nth-child(2){
+    list-style: none;
+    margin-left: 8px;
+}
+.tenthClass ul li {
+    list-style-type: circle;
+    margin-left: 25px;
+    font-size: 16px;
+    margin-top: 5px;
+
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .EducationSection {
+        width: 98%;
+        margin: 10px auto;
+        height: auto;
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        backdrop-filter: blur(25px);
+    }
+    .hedingAboute{
+        margin-left: 10px;
+
+    }
+    .tenthClass {
+        margin-top: 15px;
+        width: 100%;
+    }
+
+    .imageVies {
+        display: none;
+    }
+    .abouteMe{
+        margin-left: -3px;
+    }
+
+    .tenthClass ul h3 {
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        background-color: #8800ff3b;
+        max-width: fit-content;
+        border-radius: 5px;
+        font-weight: 900;
+        color: rgba(0, 0, 0, 0.579);
+        padding: 3px;
+        font-size: 13px;
+        font-weight: 600;
+    }
+    .tenthClass ul li {
+        list-style-type: circle;
+        margin-left: 25px;
+        font-size: 14px;
+        margin-top: 5px;
+    
+    }
+    .tenthClass div h1{
+        
+        font-size: 16px;
+    }
+
+}
+
+/* section two aboute area of intrest  */
+.thirdHeadingAbout {
+    width: 100%;
+    border-radius: 10px;
+    height: max-content;
     padding-top: 25px;
     display: flex;
     position: relative;
-    background:linear-gradient(to left, #ffffff70, #f6730099);
+    background: linear-gradient(to left, #ffffff70, #f6730099);
     margin-bottom: 25px;
     z-index: -1;
 }
-.thirdHeadingAbout::before{
+
+.thirdHeadingAbout::before {
     border-radius: 10px;
     content: '';
     position: absolute;
@@ -138,11 +276,13 @@
     backdrop-filter: blur(100px);
     z-index: -1;
 }
-.thingsIlove{
+
+.thingsIlove {
     padding-left: 50px;
     width: 50%;
     margin-bottom: 50px;
 }
+
 .containtLOVE {
     display: flex;
     flex-wrap: wrap;
@@ -153,38 +293,44 @@
     border-radius: 8px;
     padding: 10px;
 }
-.hedingAboute{
+
+.hedingAboute {
     width: max-content;
-    font-size:28px;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 28px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 900;
     position: relative;
     margin-bottom: 10px;
 
 }
-.hedingAboute::before{
+
+.hedingAboute::before {
     content: " ";
     position: absolute;
-    left:0;
+    left: 0;
     bottom: 0;
     width: 80px;
-    height:3px;
+    height: 3px;
     background-color: #a2ff00;
 }
-.containtLOVE img{
+
+.containtLOVE img {
     width: 40px;
     height: 40px;
     border-radius: 4px;
 }
-.thingsIDo{
+
+.thingsIDo {
     width: 80%;
     padding-bottom: 15px;
 }
-.thingILoveDO1{
+
+.thingILoveDO1 {
     width: 50%;
 }
-.mainComponent{
-    margin-top:10px;
+
+.mainComponent {
+    margin-top: 10px;
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.123);
     backdrop-filter: blur(20px);
@@ -195,19 +341,22 @@
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.thingsIdo1{
+
+.thingsIdo1 {
     display: flex;
     align-items: center;
     gap: 5px;
 }
-.thingsIdo1   p{
-  list-style: none;
-  color: white;
-  font-size: 16px;
+
+.thingsIdo1 p {
+    list-style: none;
+    color: white;
+    font-size: 16px;
 }
-.thingsIdo1   span{
-   color: #a2ff00;
-   font-size: 25px;
+
+.thingsIdo1 span {
+    color: #a2ff00;
+    font-size: 25px;
 }
 
 @media screen and (max-width: 768px) {
@@ -218,6 +367,7 @@
         width: 100%;
         height: 450px;
     }
+   
 
     .infoSectionAbout {
         width: 98%;
@@ -259,6 +409,7 @@
     .imageSectionAboute {
         display: none;
     }
+
     .SMimageSectionAboute {
         width: 100%;
         height: 250px;
@@ -270,53 +421,56 @@
         justify-content: center;
         position: relative;
     }
-    
+
     .SMimageSectionAboute img {
         object-fit: cover;
         border-radius: 8px;
         transition: transform 0.8s ease-in-out, z-index 0.3s;
     }
-    
-    .image1, .image2, .image3 {
+
+    .image1,
+    .image2,
+    .image3 {
         position: absolute;
         width: 180px;
         height: 220px;
         cursor: pointer;
     }
-    
+
     .image1 {
         transform: translateX(-50%);
         z-index: 1;
     }
-    
+
     .image2 {
         transform: translateX(50%);
         z-index: 1;
     }
-    
+
     .image3 {
         width: 220px;
         height: 250px;
-        z-index: 3; 
+        z-index: 3;
         transition: transform 0.8s ease-in-out, z-index 0.3s;
     }
-    
-    .image1:hover ~ .image3,
-    .image2:hover ~ .image3 {
-        transform: scale(0.9); 
+
+    .image1:hover~.image3,
+    .image2:hover~.image3 {
+        transform: scale(0.9);
         z-index: 1;
     }
-    
+
     .image1:hover {
-        z-index: 2; 
+        z-index: 2;
         transform: translateX(-50%) scale(1.1);
     }
-    
+
     .image2:hover {
-        z-index: 2; 
-        transform: translateX(50%) scale(1.1); /* Scale up image 2 on hover */
+        z-index: 2;
+        transform: translateX(50%) scale(1.1);
+        /* Scale up image 2 on hover */
     }
-    
+
 
     .abouteMeSection {
         width: 100%;
@@ -325,19 +479,21 @@
     }
 
 
-    .thirdHeadingAbout{
+    .thirdHeadingAbout {
         display: flex;
         flex-direction: column;
-        width: 90%;
+        width: 98%;
         margin: auto;
-        padding:25px 15px;
+        padding: 25px 15px;
         margin-bottom: 20px;
     }
-    .thingsIlove{
+
+    .thingsIlove {
         padding-left: 10px;
         width: 100%;
         margin-bottom: 30px;
     }
+
     .containtLOVE {
         display: flex;
         flex-wrap: wrap;
@@ -345,32 +501,39 @@
         width: 95%;
         padding: 10px;
     }
-    .containtLOVE img{
+
+    .containtLOVE img {
         width: 40px;
         height: 40px;
     }
-    .thingsIDo{
+
+    .thingsIDo {
         width: 100%;
         padding-left: 10px;
     }
-    .mainComponent{
+
+    .mainComponent {
         display: flex;
         flex-direction: column;
     }
-    .thingILoveDO1{
+
+    .thingILoveDO1 {
         width: 100%;
     }
-    .thingsIdo1{
+
+    .thingsIdo1 {
         width: 100%;
     }
-    .thingsIdo1   p{
+
+    .thingsIdo1 p {
         list-style: none;
         color: white;
         font-size: 13px;
-      }
-      .thingsIdo1   span{
-         color: #a2ff00;
-         font-size: 25px;
-      }
+    }
+
+    .thingsIdo1 span {
+        color: #a2ff00;
+        font-size: 25px;
+    }
 
 }
