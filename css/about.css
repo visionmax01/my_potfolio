@@ -69,10 +69,12 @@
     gap: 10px;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .SMimageSectionAboute {
     display: none;
+    
 }
 
 .imageSectionAboute img {
@@ -90,6 +92,14 @@
 .imageSectionAboute img:hover {
     width: 250px;
     border: 1px solid black;
+}
+.infoHoverIMG{
+    position: absolute;
+    top: -8%;
+    font-size: 12px;
+    font-weight: 600;
+    color: red;
+    text-transform: uppercase;
 }
 
 .abouteMeSection {
