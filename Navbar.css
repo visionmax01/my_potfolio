@@ -681,9 +681,7 @@ body {
     display: flex;
     gap: 15px;
     max-width: 100%;
-    scroll-snap-type: x mandatory; /* Enable snap scrolling */
-    overflow-x: hidden; /* Horizontal scrolling */
-    -webkit-overflow-scrolling: touch; /* Smooth scrolling */
+    -webkit-overflow-scrolling: touch;
     margin:0 auto;
     height: 100%;
     padding:10px 0;
