@@ -681,6 +681,9 @@ body {
     display: flex;
     gap: 15px;
     max-width: 100%;
+    scroll-snap-type: x mandatory; /* Enable snap scrolling */
+    overflow-x: hidden; /* Horizontal scrolling */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling */
     margin:0 auto;
     height: 100%;
     padding:10px 0;
@@ -699,9 +702,9 @@ body {
   }
 
   .workExperance-container {
-    padding: 0; /* Remove extra padding */
-    margin: 0; /* Remove margin for a full-screen effect */
-    overflow: hidden; /* Prevent overflow */
+    padding: 0; 
+    margin: 0; 
+    overflow: hidden; 
   }
 }
 
