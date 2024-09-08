@@ -132,6 +132,7 @@
     display: flex;
     background: #eaeaea;
     padding: 10px 15px;
+    position: relative;
 }
 
 .tenthClass {
@@ -147,16 +148,36 @@
     gap: 5px;
 
 }
-
+.imageSection{
+    width: 330px;
+    height: 220px;
+    position: relative;
+}
 .imageVies img {
     width: 330px;
     height: 220px;
     object-position: top center;
     display: flex;
-    flex-shrink: 150px;
     opacity: 85%;
+    border-radius: 8px;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
 }
+.buttoncertificat{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.867);
+    padding: 5px 10px;
+    color: white;
+    text-transform:capitalize;
+    right: 0;
+    bottom: 25px;
+    border-radius: 6px 0px 0px 6px;
+    transition: all 0.5s ease;
 
+}
+.buttoncertificat:hover{
+    background-color: #000070;
+}
 .tenthClass div {
     margin-bottom: 10px;
     font-weight: 900;
@@ -165,6 +186,9 @@
     gap: 5px;
     font-size: 20px;
     color: rgba(0, 17, 254, 0.419);
+}
+.tenthClass div h1{
+    font-size: 22px;
 }
 
 .tenthClass div i {
@@ -177,9 +201,8 @@
     background-color: #8800ff3b;
     max-width: fit-content;
     border-radius: 5px;
-    color: rgba(0, 0, 0, 0.568);
+    color: rgba(0, 0, 0, 0.541);
     padding: 3px;
-
     font-weight: 600;
 }
 
@@ -196,7 +219,6 @@
 }
 
 
-
 @media screen and (max-width: 768px) {
     .EducationSection {
         width: 98%;
@@ -208,6 +230,11 @@
         gap: 15px;
         backdrop-filter: blur(25px);
     }
+    .educationDetail{
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+    }
     .hedingAboute{
         margin-left: 10px;
 
@@ -218,7 +245,32 @@
     }
 
     .imageVies {
-        display: none;
+        width: 100%;
+        height: max-content;
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 10px; 
+        position: relative;
+    }
+    
+    .imageVies img {
+        width: 100%;
+        height: 220px;
+        object-position: top center;
+        display: flex;
+        flex-shrink: 150px;
+        opacity: 85%;
+     
+    }
+    .buttoncertificat{
+        position: absolute;
+        background: #000;
+        left: 0;
+        bottom: 0;
+        border-radius: 0px 0px 6px 6px;
+    }
+    .buttoncertificat:hover{
+        background: #320101;
     }
     .abouteMe{
         margin-left: -3px;
