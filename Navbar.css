@@ -585,6 +585,123 @@ body {
 /* section third home page  */
 .workexperties{
   padding: 15px;
-  width: 100%;
-  height: 350px;
 }
+.workExperance-container {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.workExperance {
+  display: flex;
+  gap: 15px;
+  max-width: 98%;
+  margin:0 auto;
+  height: 100%;
+  padding:10px 0;
+  transition: transform 0.5s ease-in-out; 
+}
+
+.workExperance img {
+  min-width: 50%; /* Each image takes 50% of the container */
+  max-width: 50%;
+  object-fit: fill;
+  border: 2px solid black;
+  border-radius: 10px;
+
+}
+
+.buttonBack, .buttonNext {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.buttonBack {
+  left: 0;
+  opacity: 40%;
+}
+
+.buttonNext {
+  right: 0;
+  opacity: 40%;
+}
+
+.buttonBack:hover {
+  opacity: 100%;
+}
+
+.buttonNext:hover {
+  opacity: 100%;
+
+}
+/* Dot indicator styles */
+.dot-container {
+  text-align: center;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 5px;
+  opacity: 0.5;
+  transition: opacity 0.3s;
+}
+
+.active {
+  opacity: 1; /* Highlight the active dot */
+}
+@media (max-width: 768px) {
+  .dot-container {
+    display: none; /* Hide the dot indicators on mobile */
+  }
+  .workExperance-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  .buttonBack, .buttonNext {
+    display: none;
+  }
+  .workExperance {
+    display: flex;
+    gap: 15px;
+    max-width: 100%;
+    margin:0 auto;
+    height: 100%;
+    padding:10px 0;
+    transition: transform 0.5s ease-in-out; 
+  }
+  
+
+  .workExperance img {
+    scroll-snap-align: start; 
+    min-width: 100vw; 
+    height: 300px; 
+    object-fit: fill;
+    border: none; 
+    border: 0.5px solid black;
+    border-radius: 0; 
+  }
+
+  .workExperance-container {
+    padding: 0; /* Remove extra padding */
+    margin: 0; /* Remove margin for a full-screen effect */
+    overflow: hidden; /* Prevent overflow */
+  }
+}
+
