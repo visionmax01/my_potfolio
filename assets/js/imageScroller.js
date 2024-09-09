@@ -71,3 +71,9 @@ backButton.addEventListener('click', () => {
 
 // Initial dot update
 updateDots();
+
+
+
+
+
+  

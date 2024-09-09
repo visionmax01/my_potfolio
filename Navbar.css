@@ -531,10 +531,13 @@ body {
   align-items: center;
   background-color: hsla(0, 100%, 79%, 0.196);
   backdrop-filter: blur(10px);
-  border-radius: 10px;
   transition: all 0.3s ease;
+  border-radius: 6px;
 }
+.html:hover{
+  border:1px solid white;
 
+}
 .html img {
   width: 40px;
   height: 40px;
@@ -543,8 +546,6 @@ body {
 
 .html:hover img {
   scale: 1.2;
-  margin-bottom: 12px;
-
 }
 
 .tooltip {
