@@ -698,7 +698,14 @@ body {
     overflow: hidden;
   }
   .buttonBack, .buttonNext {
-    display: none;
+    position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
   }
   .workExperance {
     display: flex;
