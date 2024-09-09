@@ -229,22 +229,23 @@ body {
   opacity: 35%;
 }
 .introDesign{
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
 }
+
 .introDesign1{
   position: absolute;
   top: 0; 
   left: 0;
-  border-top: 5px solid rgb(0, 34, 255);
-  border-left: 5px solid rgb(0, 34, 255);
+  border-top: 3px solid #0022ff;
+  border-left: 3px solid #0022ff;
 }
 .introDesign2{
   position: absolute;
   bottom: 0;
   right: 0;
-  border-right: 5px solid rgb(0, 34, 255);
-  border-bottom: 5px solid rgb(0, 34, 255);
+  border-right: 3px solid #0022ff;
+  border-bottom:3px solid #0022ff;
 }
 
 .introSection h2{
@@ -286,10 +287,28 @@ body {
   height: 100%;
 
 }
-.ImageSection img{
-  width: 350px;
-  height: 100%;
+.imageView{
+  position: relative;
+  
+}
+.imageView img{
   border-radius: 20px;
+  object-fit: cover;
+  height: 350px;
+  object-position: top center;
+  opacity: 85%;
+  width: 350px;
+}
+.imageView::before{
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: #00000036;
+  border-radius: 20px;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 
@@ -359,6 +378,10 @@ body {
 }
 
 @media screen and (max-width: 768px)  {
+  .introDesign{
+    width: 100px;
+    height: 200px;
+  }
   .navContainer a{
     margin-left: 15px;
     font-size: 20px;
@@ -464,7 +487,7 @@ body {
   position: absolute;
   left: 0;
   top: 0;
-  background-color: rgba(0, 0, 0, 0.412);
+  background-color: rgba(0, 0, 0, 0.793);
   width: 100%;
   height: 100%;
   backdrop-filter: blur(5px);
@@ -589,7 +612,7 @@ body {
 .workExperance-container {
   position: relative;
   width: 100%;
-  height: 400px;
+  height: 300px;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -597,7 +620,7 @@ body {
 .workExperance {
   display: flex;
   gap: 15px;
-  max-width: 98%;
+  max-width: 100%;
   margin:0 auto;
   height: 100%;
   padding:10px 0;
@@ -605,8 +628,8 @@ body {
 }
 
 .workExperance img {
-  min-width: 50%; /* Each image takes 50% of the container */
-  max-width: 50%;
+  min-width: 30%; 
+  max-width: 30%;
   object-fit: fill;
   border: 2px solid black;
   border-radius: 10px;
@@ -681,7 +704,6 @@ body {
     display: flex;
     gap: 15px;
     max-width: 100%;
-    -webkit-overflow-scrolling: touch;
     margin:0 auto;
     height: 100%;
     padding:10px 0;
@@ -690,9 +712,8 @@ body {
   
 
   .workExperance img {
-    scroll-snap-align: start; 
-    min-width: 100vw; 
-    height: 300px; 
+    min-width: 85%; 
+    height: 250px; 
     object-fit: fill;
     border: none; 
     border: 0.5px solid black;

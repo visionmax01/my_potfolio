@@ -78,6 +78,7 @@
 
 }
 
+
 .imageSectionAboute img {
     background-color: blue;
     width: 60px;
@@ -87,6 +88,9 @@
     cursor: pointer;
     object-position: center;
     transition: 0.3s ease;
+    border-top:2px solid blue;
+    border-bottom:2px solid blue;
+
 
 }
 
@@ -481,6 +485,8 @@
         object-fit: cover;
         border-radius: 8px;
         transition: transform 0.8s ease-in-out, z-index 0.3s;
+        border-top:3px solid black;
+        border-bottom:3px solid black;
     }
 
     .image1,
@@ -495,11 +501,15 @@
     .image1 {
         transform: translateX(-50%);
         z-index: 1;
+        object-fit: fill;
+        object-position: right;
+        transition: all 0.3s ease;
     }
 
     .image2 {
         transform: translateX(50%);
         z-index: 1;
+        object-position: left;
     }
 
     .image3 {
@@ -518,11 +528,13 @@
     .image1:hover {
         z-index: 2;
         transform: translateX(-50%) scale(1.1);
+        object-position: center;
     }
 
     .image2:hover {
         z-index: 2;
         transform: translateX(50%) scale(1.1);
+        object-position: center;
         /* Scale up image 2 on hover */
     }
 
@@ -652,7 +664,8 @@
 
 @media screen and (max-width: 768px) {
     .experianceSection{
-        width: 100%;
+        width: 98%;
+        margin: 0 auto;
         height: 25%;
         background-color: #eaeaea;
         padding: 5px;
