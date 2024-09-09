@@ -713,7 +713,7 @@ body {
 
   .workExperance img {
     min-width: 85%; 
-    height: 250px; 
+    height: 200px; 
     object-fit: fill;
     border: none; 
     border: 0.5px solid black;
