@@ -54,19 +54,19 @@ dots.forEach((dot, index) => {
 });
 
 // Auto-scroll interval
-let autoScroll = setInterval(scrollNext, 8000);
+let autoScroll = setInterval(scrollNext, 4000);
 
 // Button event listeners
 nextButton.addEventListener('click', () => {
     clearInterval(autoScroll);
     scrollNext();
-    autoScroll = setInterval(scrollNext, 8000);
+    autoScroll = setInterval(scrollNext, 4000);
 });
 
 backButton.addEventListener('click', () => {
     clearInterval(autoScroll);
     scrollBack();
-    autoScroll = setInterval(scrollNext, 8000);
+    autoScroll = setInterval(scrollNext, 4000);
 });
 
 // Initial dot update
