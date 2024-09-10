@@ -88,8 +88,8 @@
     cursor: pointer;
     object-position: center;
     transition: 0.3s ease;
-    border-top:2px solid blue;
-    border-bottom:2px solid blue;
+    border-top:2px solid #000000;
+    border-bottom:2px solid #000000;
 
 
 }
